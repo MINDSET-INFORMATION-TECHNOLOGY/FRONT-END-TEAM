@@ -23,8 +23,12 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  padding-top: 2rem;
    border-bottom: 1px solid #eee;
-   height: 60px;
+ 
+}
+.sidebar-logo p{
+  margin-bottom: 2rem;
 }
 
 .sidebar-menu {
@@ -60,12 +64,13 @@ body{
 .sidebar-logout {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 30px;
   padding: 12px 20px;
   cursor: pointer;
   color: #e11d48; /* Red */
   font-size: 15px;
   border-top: 1px solid #eee;
+  
 }
 
 .sidebar-logout svg {
@@ -75,5 +80,10 @@ body{
 .sidebar-logout:hover {
   background: #ffe4e6;
 }
-
+.side-barlogout-item{
+ display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 0.5rem;
+}
  

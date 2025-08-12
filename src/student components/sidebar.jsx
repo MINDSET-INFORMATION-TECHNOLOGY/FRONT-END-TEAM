@@ -26,7 +26,9 @@ export default function Sidebar() {
 
   return (
     <div className="sidebar">
-      <div className="sidebar-logo">SmartLink</div>
+      <div className="sidebar-logo">
+         <p>SmartLink</p>
+        </div>
       <ul className="sidebar-menu">
         {menuItems.map((item, index) => (
           <li key={index}>
@@ -39,8 +41,11 @@ export default function Sidebar() {
         ))}
       </ul>
       <div className="sidebar-logout">
-        <FaPowerOff />
+        <div className="side-barlogout-item">
+          <FaPowerOff />
         <span>Logout</span>
+        </div>
+        
       </div>
     </div>
   );

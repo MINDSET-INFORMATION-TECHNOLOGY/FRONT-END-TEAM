@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Sidebar from './student components/sidebar'
+import Studentdashboard from './student components/studentdashboard'
 import './App.css'
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     
-      <Sidebar/>
+      <Studentdashboard/>
      
     </>
   )
