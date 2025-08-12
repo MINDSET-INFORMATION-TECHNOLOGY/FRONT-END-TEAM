@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  
+}
+body{
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar-logo {
+    font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #1E3AEA, #764BA2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+   border-bottom: 1px solid #eee;
+   height: 60px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  padding-top: 0.5rem;
+  flex: 1;
+ 
+  
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 12px 20px;
+  color: #333;
+  font-size: 15px;
+  cursor: pointer;
+   padding-top: 2rem;
+  transition: background 0.2s ease;
+}
+
+.sidebar-menu li:hover {
+  background: #f0f4ff;
+  color: #3b82f6;
+}
+
+.sidebar-menu li svg {
+  font-size: 18px;
+}
+
+.sidebar-logout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #e11d48; /* Red */
+  font-size: 15px;
+  border-top: 1px solid #eee;
+}
+
+.sidebar-logout svg {
+  font-size: 18px;
+}
+
+.sidebar-logout:hover {
+  background: #ffe4e6;
+}
+
+ 
