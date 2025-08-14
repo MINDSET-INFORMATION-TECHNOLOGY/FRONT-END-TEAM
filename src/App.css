@@ -86,4 +86,138 @@ body{
   gap: 30px;
   margin-top: 0.5rem;
 }
+.circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1E3AEA;
+    position: relative;
+  bottom: 2.5rem;
+  left: 0.9rem;
+} 
+#message-number{
+  padding: 0.1rem;
+  text-align: center;
+color: white;
+
+}
+.nav{
+  width: 100%;
+  height: 10vh;
+   background: white;
+  border-bottom: 1px solid #eee;
+}
+.container{
+  display: flex;
+}
+#welcome-text-nav{
+    font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(to right, #1E3AEA, #764BA2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
  
+}
+.nav-container{
+  display: flex;
+    padding: 1.5rem;
+    gap: 720px;
+}
+.icon-nav{
+  display: flex;
+  gap: 50px;
+  
+}
+#profile-img-nav{
+  position: relative;
+bottom: 0.8rem;
+}
+#notification-icon-nav{
+  font-size: 20px;
+}
+#message-icon-nav{
+  font-size: 20px;
+}
+.content-studentdashboard{
+  background-color: rgb(237,247,255 );
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+.welcome-box{
+ background: linear-gradient(135deg, #1E3AEA, #764BA2);
+ width: 18rem;
+ height: 7rem;
+color: white;
+ border-radius: 15px;
+}
+#welcome-message-box{
+  display: flex;
+justify-content: center;
+  padding: 1rem;
+}
+.welcome-b-container{
+  display: flex;
+ padding: 5rem;
+ justify-content: center;
+}
+
+.welcome-box p{
+  text-align: center;
+  font-size: 13px;
+}
+.statbox{
+  width: 8rem;
+  height: 10rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.stats{
+  display: flex;
+  gap: 13rem;
+  justify-content: center;
+}
+
+.stats-container {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 150px;
+  max-width: 180px;
+  background: white;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+}
+
+.stat-icon {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-box p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #555;
+  margin-top: 0.3rem;
+}
