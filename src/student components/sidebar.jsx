@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import {
   FaTachometerAlt,
   FaEnvelope,
@@ -25,6 +26,14 @@ export default function Sidebar() {
     { name: "View profile", icon: <FaUser /> },
   ];
 
+  const navigate = useNavigate();
+
+  // Simulate logout and redirect to Create Account page
+  const handleLogout = () => {
+    // Here you would clear auth state, tokens, etc.
+    navigate('/create-account');
+  };
+
   return (
     <div className="sidebar">
       <div className="sidebar-logo">
@@ -33,20 +42,27 @@ export default function Sidebar() {
       <ul className="sidebar-menu">
         {menuItems.map((item, index) => (
           <li key={index}>
-            <div style={{color:"#1E3AEA"}}>
-        {item.icon}
-            </div>
-           
-            <span>{item.name}</span>
+            <a
+              href={item.link ? item.link : '#'}
+              style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+            >
+              <div style={{color:"#1E3AEA"}}>
+                {item.icon}
+              </div>
+              <span>{item.name}</span>
+            </a>
           </li>
         ))}
       </ul>
       <div className="sidebar-logout">
-        <div className="side-barlogout-item">
+        <button
+          className="side-barlogout-item"
+          style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'inherit', fontSize: '1rem', padding: 0 }}
+          onClick={handleLogout}
+        >
           <FaPowerOff />
-        <span>Logout</span>
-        </div>
-        
+          <span>Logout</span>
+        </button>
       </div>
     </div>
   );

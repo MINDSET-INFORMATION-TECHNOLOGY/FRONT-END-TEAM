@@ -1,0 +1,132 @@
+/* CreateAccount.css
+	 Professional, responsive styles for the Create Account form
+	 Author: FRONT-END-TEAM
+	 Date: August 2025
+*/
+
+.create-account-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #fafbfc;
+	padding: 2rem;
+}
+
+.create-account-form {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+	padding: 2.5rem 2.5rem;
+	max-width: 540px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	box-sizing: border-box;
+}
+
+.form-title {
+	color: #5a4fcf;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+	color: #555;
+	font-size: 1rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.form-row {
+	display: flex;
+	gap: 1.2rem;
+	width: 100%;
+}
+
+.form-row .form-group {
+	flex: 1 1 0;
+	min-width: 0;
+}
+/* Ensure select and input fields fill available space and align nicely */
+input,
+select {
+	width: 100%;
+	box-sizing: border-box;
+}
+/* Add extra spacing for select fields if needed */
+select {
+	min-width: 120px;
+}
+
+label {
+	font-size: 1rem;
+	color: #333;
+	font-weight: 500;
+}
+
+input,
+select {
+	padding: 0.7rem 1rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	font-size: 1rem;
+	background: #fafbfc;
+	transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+	border-color: #5a4fcf;
+	outline: none;
+}
+
+.error {
+	color: #e74c3c;
+	font-size: 0.95rem;
+	margin-top: 2px;
+}
+
+.submit-btn {
+	background: linear-gradient(90deg, #ff6a6a 0%, #ff8c6a 100%);
+	color: #fff;
+	font-size: 1.1rem;
+	font-weight: 600;
+	border: none;
+	border-radius: 8px;
+	padding: 0.9rem 0;
+	margin-top: 1.5rem;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(255, 106, 106, 0.15);
+	transition: background 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:disabled {
+	background: #e0e0e0;
+	color: #aaa;
+	cursor: not-allowed;
+	box-shadow: none;
+}
+
+@media (max-width: 700px) {
+	.create-account-form {
+		padding: 1.2rem 0.5rem;
+		max-width: 98vw;
+	}
+	.form-row {
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+	.form-title {
+		font-size: 1.4rem;
+	}
+}
