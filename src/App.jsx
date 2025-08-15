@@ -1,10 +1,11 @@
-import EducatorDashboard from "./educator dashboard/educatorDashboard";
+import { useState } from "react";
+import Studentdashboard from "./student components/studentdashboard";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <EducatorDashboard />
+      <Studentdashboard />
     </>
   );
 }
