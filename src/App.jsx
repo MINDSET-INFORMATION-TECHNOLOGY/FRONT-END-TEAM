@@ -1,19 +1,12 @@
-import { useState } from 'react'
-import Studentdashboard from './student components/studentdashboard'
-import './App.css'
+import EducatorDashboard from "./educator dashboard/educatorDashboard";
+import "./App.css";
 
 function App() {
-
-
   return (
     <>
-    
- <Studentdashboard/>
-     
- 
-     
+      <EducatorDashboard />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
