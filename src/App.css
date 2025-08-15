@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
-  
 }
-body{
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
 .sidebar {
   width: 230px;
   height: 100vh;
@@ -17,17 +17,17 @@ body{
 }
 
 .sidebar-logo {
-    font-size: 20px;
+  font-size: 20px;
   font-weight: bold;
-  background: linear-gradient(to right, #1E3AEA, #764BA2);
+  background: linear-gradient(to right, #1e3aea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   padding-top: 2rem;
-   border-bottom: 1px solid #eee;
- 
+  border-bottom: 1px solid #eee;
 }
-.sidebar-logo p{
+
+.sidebar-logo p {
   margin-bottom: 2rem;
 }
 
@@ -36,8 +36,6 @@ body{
   padding: 0;
   padding-top: 0.5rem;
   flex: 1;
- 
-  
 }
 
 .sidebar-menu li {
@@ -48,7 +46,7 @@ body{
   color: #333;
   font-size: 15px;
   cursor: pointer;
-   padding-top: 2rem;
+  padding-top: 2rem;
   transition: background 0.2s ease;
 }
 
@@ -70,7 +68,6 @@ body{
   color: #e11d48; /* Red */
   font-size: 15px;
   border-top: 1px solid #eee;
-  
 }
 
 .sidebar-logout svg {
@@ -80,100 +77,117 @@ body{
 .sidebar-logout:hover {
   background: #ffe4e6;
 }
-.side-barlogout-item{
- display: flex;
+
+.side-barlogout-item {
+  display: flex;
   align-items: center;
   gap: 30px;
   margin-top: 0.5rem;
 }
-.circle{
+
+.circle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #1E3AEA;
-    position: relative;
+  background-color: #1e3aea;
+  position: relative;
   bottom: 2.5rem;
   left: 0.9rem;
-} 
-#message-number{
+}
+
+#message-number {
   padding: 0.1rem;
   text-align: center;
-color: white;
-
+  color: white;
 }
-.nav{
+
+.nav {
   width: 100%;
   height: 10vh;
-   background: white;
+  background: white;
   border-bottom: 1px solid #eee;
 }
-.container{
+
+.container {
   display: flex;
 }
-#welcome-text-nav{
-    font-size: 20px;
+
+#welcome-text-nav {
+  font-size: 20px;
   font-weight: bold;
-  background: linear-gradient(to right, #1E3AEA, #764BA2);
+  background: linear-gradient(to right, #1e3aea, #764ba2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
 }
-.nav-container{
+
+.nav-container {
   display: flex;
-    padding: 1.5rem;
-    gap: 720px;
+  padding: 1.5rem;
+  gap: 720px;
 }
-.icon-nav{
+
+.icon-nav {
   display: flex;
   gap: 50px;
-  
 }
-#profile-img-nav{
+
+#profile-img-nav {
   position: relative;
-bottom: 0.8rem;
+  bottom: 0.8rem;
 }
-#notification-icon-nav{
+
+#notification-icon-nav {
   font-size: 20px;
 }
-#message-icon-nav{
+
+#message-icon-nav {
   font-size: 20px;
 }
-.content-studentdashboard{
-  background-color: rgb(237,247,255 );
+
+.content-studentdashboard {
+  background-color: rgb(237, 247, 255);
   flex: 1;
   width: 100%;
   height: 100%;
 }
-.welcome-box{
- background: linear-gradient(135deg, #1E3AEA, #764BA2);
- width: 18rem;
- height: 7rem;
-color: white;
- border-radius: 15px;
-}
-#welcome-message-box{
-  display: flex;
-justify-content: center;
-  padding: 1rem;
-}
-.welcome-b-container{
-  display: flex;
- padding: 5rem;
- justify-content: center;
+
+.welcome-box {
+  background: linear-gradient(135deg, #1e3aea, #764ba2);
+  width: 18rem;
+  height: 7rem;
+  color: white;
+  border-radius: 15px;
 }
 
-.welcome-box p{
+#welcome-message-box {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.welcome-b-container {
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+}
+
+.welcome-box p {
   text-align: center;
   font-size: 13px;
 }
-.statbox{
+
+.statbox {
   width: 8rem;
   height: 10rem;
   background-color: white;
   border-radius: 15px;
 }
 
-.stats{
+.stats {
   display: flex;
   gap: 13rem;
   justify-content: center;
@@ -195,7 +209,7 @@ justify-content: center;
   border-radius: 12px;
   padding: 1.2rem;
   text-align: center;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
 

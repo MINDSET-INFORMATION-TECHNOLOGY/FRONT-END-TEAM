@@ -15,27 +15,31 @@ function EducatorDashboard() {
   const statsData = [
     {
       title: "Active Projects",
-      value: "3",
+      value: "8",
       icon: <FaProjectDiagram />,
       color: "#1E3AEA",
+      bgColor: "rgba(30, 58, 234, 0.1)",
     },
     {
       title: "Students Mentored",
       value: "27",
       icon: <FaUsers />,
       color: "#10B981",
+      bgColor: "rgba(16, 185, 129, 0.1)",
     },
     {
       title: "Budget managed",
       value: "280k",
       icon: <FaDollarSign />,
       color: "#F59E0B",
+      bgColor: "rgba(245, 158, 11, 0.1)",
     },
     {
       title: "AVERAGE RATING",
       value: "4.9",
       icon: <FaStar />,
       color: "#EF4444",
+      bgColor: "rgba(239, 68, 68, 0.1)",
     },
   ];
 
@@ -63,11 +67,7 @@ function EducatorDashboard() {
       <Sidebar />
 
       <div className="main-content">
-        <Navbar
-          userName="Dr. Okonkwo"
-          userRole="Educator"
-          university="University of Lagos"
-        />
+        <Navbar />
 
         <div className="dashboard-content">
           {/* Welcome Section */}
@@ -86,7 +86,13 @@ function EducatorDashboard() {
           <div className="stats-grid">
             {statsData.map((stat, index) => (
               <div key={index} className="stat-card">
-                <div className="stat-icon" style={{ color: stat.color }}>
+                <div
+                  className="stat-icon"
+                  style={{
+                    color: stat.color,
+                    backgroundColor: stat.bgColor,
+                  }}
+                >
                   {stat.icon}
                 </div>
                 <div className="stat-content">
@@ -108,10 +114,10 @@ function EducatorDashboard() {
               {recommendedProjects.map((project, index) => (
                 <div key={index} className="project-card">
                   <div className="project-image">
-                    <img
+                    {/* <img
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
-                    />
+                    /> */}
                     <div
                       className="project-status"
                       style={{ backgroundColor: project.statusColor }}
