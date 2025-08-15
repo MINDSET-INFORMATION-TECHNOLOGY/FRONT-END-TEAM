@@ -1,5 +1,5 @@
 
-# SmartLink – Team SmartTech
+# SmartLink – Mindset IT Team
 
 ## Project Vision
 SmartLink is a collaborative platform designed to connect students, educators, and companies, creating opportunities for learning, earning, and professional growth. Our goal is to build a full-stack solution that delivers real value and impact to users across Nigeria and beyond.
