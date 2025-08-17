@@ -1,12 +1,55 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# SmartLink – Mindset IT Team
 
-Currently, two official plugins are available:
+## Project Vision
+SmartLink is a collaborative platform designed to connect students, educators, and companies, creating opportunities for learning, earning, and professional growth. Our goal is to build a full-stack solution that delivers real value and impact to users across Nigeria and beyond.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Role-Based Dashboards:** Tailored experiences for students, educators, and companies.
+- **Account Creation:** Secure, user-friendly onboarding for new users.
+- **Real-Time Chat:** Instant messaging for collaboration and support.
+- **Public Newsfeed:** Stay updated with the latest opportunities and announcements.
+- **Leaderboard & Badges:** Recognize achievements and encourage healthy competition.
+- **Task Management:** Track ongoing tasks and submissions efficiently.
+- **Notifications:** Timely alerts for important events and updates.
+- **Profile & Submissions:** Manage personal information and academic/professional submissions.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **Frontend:** React, Vite, CSS Modules
+- **Routing:** React Router
+- **Icons:** React Icons
+- **State Management:** React Hooks
+- **Backend:** (To be defined by team)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+1. Clone the repository:
+	```sh
+	git clone https://github.com/MINDSET-INFORMATION-TECHNOLOGY/FRONT-END-TEAM.git
+	```
+2. Install dependencies:
+	```sh
+	npm install
+	```
+3. Start the development server:
+	```sh
+	npm run dev
+	```
+4. Open your browser to the local address shown in the terminal (e.g., http://localhost:5173).
+
+## Contributing
+- Create a feature branch for your work.
+- Commit clear, descriptive messages.
+- Open a pull request for review.
+- Communicate actively and review others’ code.
+
+## Code of Conduct
+- Respect all team members and their ideas.
+- Communicate clearly and constructively.
+- Strive for clean, maintainable, and scalable code.
+- Every contribution is valued.
+
+## License
+This project is licensed under the MIT License.
+
+---
+Mindset IT Team– Building the future, one line of code at a time.
