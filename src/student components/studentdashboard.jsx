@@ -7,15 +7,15 @@ function Studentdashboard() {
 
   return (
     <>
-    <div className="container">
+      <div className="container">
+        
+        <Sidebar/>
+        <div className="content-nested">
+          <Nav/>
+          <Content/>
+        </div>
       
-      <Sidebar/>
-      <div className="content-nested">
- <Nav/>
-     <Content/>
       </div>
-    
-</div>
 
     </>
   )

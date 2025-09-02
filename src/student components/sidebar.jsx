@@ -31,20 +31,22 @@ export default function Sidebar() {
          <p>SmartLink</p>
         </div>
       <ul className="sidebar-menu">
-        {menuItems.map((item, index) => (
-          <li key={index}>
-            <div style={{color:"#1E3AEA"}}>
-        {item.icon}
-            </div>
-           
-            <span>{item.name}</span>
-          </li>
-        ))}
+        {
+          menuItems.map((item, index) => (
+            <li key={index}>
+              <div style={{color:"#1E3AEA"}}>
+                {item.icon}
+              </div>
+            
+              <span>{item.name}</span>
+            </li>
+          ))
+        }
       </ul>
       <div className="sidebar-logout">
         <div className="side-barlogout-item">
           <FaPowerOff />
-        <span>Logout</span>
+          <span>Logout</span>
         </div>
         
       </div>
